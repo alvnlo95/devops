@@ -32,5 +32,25 @@ git log: to view commit information
 
 git push --set-upstream origin <branch name>
 
-git push origin :<branch name> : to delete a branch from remote repo (example "git push origin :feature
-/task-1")
+git branch -d <branch name> : to delete the branch from local repository
+
+Note: the difference between git fetch and git pull are, git fetch will update the references in local
+repo with remote repe (example: if any new branch created, or any branch is updated with new commits)
+whereas git pull will update the current branch content/changes
+
+Create merge conflict scenario:
+1. create branch task-1 from master 
+
+2. create branch task-2 from master
+
+3. Change a file on task-1 (local)
+
+4. Change the same file from task-2 (remote + local)
+
+5. Merge task-1 to master (local + remote)
+
+6. Task-2 to master
+
+Fix: git pull origin master in to your task-2 branch
+
+Delete << and >> and == lines
