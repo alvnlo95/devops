@@ -34,3 +34,9 @@ git push --set-upstream origin <branch name>
 
 git push origin :<branch name> : to delete a branch from remote repo (example "git push origin :feature
 /task-1")
+
+git branch -d <branch name> : to delete the branch from local repository
+
+Note: the difference between git fetch and git pull are, git fetch will update the references in local
+repo with remote repe (example: if any new branch created, or any branch is updated with new commits)
+whereas git pull will update the current branch content/changes
